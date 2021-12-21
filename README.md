@@ -17,9 +17,9 @@ To test this project on your computer, follow the following steps;
 1. Download or clone this repository on your computer
 2. Open the project folder and navigate into the `library-system` directory and run
 
-  ```text
-    npm install
-  ```
+    ```text
+   npm install
+    ```
 
 to install all dependencies
 
@@ -44,7 +44,22 @@ to install all dependencies
 6.  Go to <https://faucet.rinkeby.io/> and follow the instructions to get ethers for your wallet
 7.  Come back to your terminal and run 
 
-```text
+  ```text
   npm run dev
+  ```
+
+##  Note
+To run you own version of the smart contract on the Rinkeby test network, go to the  `library-system/ethereum`  directory on your terminal and run
+
+```text
+node compile.js
 ```
+
+Then run 
+
+```text
+node deploy.js
+```
+
+Copy the address the contract was deployed to, navigate to `libraryRecord.js` and replace the address there with yours.
  
