@@ -62,4 +62,8 @@ node deploy.js
 ```
 
 Copy the address the contract was deployed to, navigate to `libraryRecord.js` and replace the address there with yours.
+
+##  View live project
+-   To view the deployed project, go to <https://comp-7570-project.vercel.app/>
+-   If you were not prompted to connect your Metmask wallet to the application, click on the Metamask icon and sign in. Then refresh the page.
  
