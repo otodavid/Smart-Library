@@ -19,8 +19,8 @@ export default function Home() {
         <div className={styles.content}>
           <h1>Redefined Library Access</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aut quo
-            quibusdam? Commodi dolorum ab voluptatibus{" "}
+            Borrow books from your favorite physical library with our
+            tried-and-true blockchain solution
           </p>
           <Link href="/books">
             <a>View All</a>
