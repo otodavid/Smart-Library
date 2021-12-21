@@ -1,0 +1,83 @@
+.books {
+  overflow: hidden;
+  background: linear-gradient(to bottom right, #fff, hsla(221, 100%, 63%, .05));
+}
+
+.books > div {
+  margin-top: 5rem;
+  /* padding: 2rem 5%; */
+}
+
+.books h2 {
+  text-align: center;
+  color: #252E42;
+  font-size: 1.5rem;
+}
+
+.top {
+  padding: 2rem 5%;
+  border-bottom: 1px solid hsla(221, 28%, 20%, .2);
+}
+
+.filter {
+  margin: 1rem 0 0 auto;
+  width: max-content;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter button {
+  border: 1px solid hsla(221, 100%, 63%, 0.479);
+  background-color: transparent;
+  color: hsla(221, 100%, 63%, 1);
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.filter button:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.filter button:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: 0;
+}
+
+.filter .filtered {
+  background-color: hsla(221, 100%, 63%, 1);
+  color: #fff;
+}
+
+.bottom {
+  padding: 2rem 5%;
+}
+
+.bottom > p {
+  text-align: center;
+}
+
+.bottom > p:last-of-type {
+  font-size: 12px;
+  margin-bottom: 2rem;
+}
+
+.borrowed {
+  padding: 1rem 0 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .books h2 {
+    font-size: 2.5rem;
+  }
+
+  .bottom > p {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,72 @@
+.borrowedBook {
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 2px 1px hsla(221, 28%, 20%, 0.2);
+  border-radius: 4px;
+}
+
+.borrowedBook:hover {
+  box-shadow: 0 0 5px 1px hsla(221, 28%, 20%, 0.3);
+}
+
+.borrowedBook h3 {
+  font-size: 1.2rem;
+  color: #252e42;
+}
+
+.address {
+  margin: 1rem 0;
+}
+
+.address p {
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+.book button {
+  display: flex;
+  align-items: center;
+}
+
+.bottom {
+  display: flex;
+  flex-flow: row wrap;
+  row-gap: 1rem;
+  column-gap: 2rem;
+}
+
+.bottom p {
+  font-size: 14px;
+  margin-bottom: 0.2rem;
+}
+
+.returnBtn {
+  background-color: hsla(221, 100%, 63%, 1);
+  color: hsla(221, 100%, 100%, 1);
+  padding: 0.6rem 1.5rem;
+  font-weight: 500;
+  border-radius: 4px;
+  line-height: 1;
+}
+
+.returnBtn:hover {
+    background-color: hsla(221, 100%, 53%, 1);
+}
+
+.approveBtn {
+  background-color: hsl(146, 43%, 40%);
+  color: hsla(221, 100%, 100%, 1);
+  padding: 0.6rem 1.5rem;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.approveBtn:hover {
+  background-color: hsl(146, 43%, 30%);
+}
+
+.returned {
+  background-color: #c52d2a;
+  color: hsla(221, 100%, 100%, 1);
+  pointer-events: none;
+}

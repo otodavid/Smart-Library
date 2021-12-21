@@ -1,0 +1,119 @@
+.hero {
+  display: grid;
+  grid-template-columns: repeat(autofill, minmax(767px, 1fr));
+  grid-template-rows: auto;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.heroImage {
+  grid-row: 1/2;
+  position: relative;
+  top: 0rem;
+  left: 0;
+  z-index: 5;
+  margin-top: 4rem;
+}
+
+.heroImage::after {
+  content: "";
+  position: absolute;
+  top: -15rem;
+  right: -15rem;
+  width: 1000px;
+  z-index: 0;
+  border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+  height: 700px;
+  background: linear-gradient(
+    to bottom right,
+    hsla(221, 100%, 63%, 0.083),
+    rgba(255, 255, 255, 0.041)
+  );
+}
+
+.content {
+  padding: 1rem 5%;
+  z-index: 2;
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 2rem;
+  color: hsl(221, 100%, 63%);
+  color: #252e42;
+  line-height: 1.1;
+  padding-bottom: 1.5rem;
+}
+
+.content p {
+  padding-bottom: 1.5rem;
+  max-width: 45ch;
+}
+
+.content a {
+  border: 0;
+  background-color: hsl(221, 100%, 63%);
+  color: #fff;
+  padding: 0.6rem 1.5rem;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.bookList {
+  position: relative;
+  z-index: 2;
+  margin-top: 3rem;
+}
+
+.bookList h2 {
+  text-align: center;
+  margin: 0 auto;
+  width: 20ch;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #252e42;
+  text-transform: capitalize;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr 1fr;
+    padding-top: 3rem;
+    padding: 3rem 7% 5rem;
+    justify-items: start;
+  }
+
+  .heroImage {
+    grid-column: 2/3;
+  }
+
+  .content {
+    text-align: left;
+    padding: 7rem 0;
+  }
+
+  .content h1 {
+    font-size: 3rem;
+  }
+
+  .bookList {
+    margin-top: 0;
+    top: -2rem;
+  }
+
+  .bookList h2 {
+    font-size: 2.3rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .content h1 {
+    font-size: 4rem;
+  }
+
+  .content p {
+    font-size: 20px;
+  }
+}

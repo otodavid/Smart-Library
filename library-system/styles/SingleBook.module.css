@@ -1,0 +1,124 @@
+.borrowBook {
+  background: linear-gradient(
+    to bottom right,
+    #fff,
+    hsla(221, 100%, 63%, 0.05)
+  );
+}
+
+.singleBook {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 7rem 5%;
+  border-radius: 4px;
+}
+
+.singleBook h1 {
+  flex: 1 1 100%;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 2rem;
+  color: #252e42;
+}
+
+.bookImage {
+  padding: 0 1rem;
+  flex: 1 1 45%;
+}
+
+.bookImage > div {
+  pointer-events: none;
+}
+
+.details {
+  flex: 0 1 100%;
+  margin-top: 3rem;
+  padding: 0 1rem;
+  max-width: 400px;
+}
+
+.duration label {
+  font-size: 15px;
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}
+
+.details input {
+  width: 100%;
+}
+
+.details h3 {
+  color: #252e42;
+  margin-bottom: 1rem;
+}
+
+.details p {
+  margin-top: 1rem;
+}
+
+.borrowBtn {
+  margin-top: 1rem;
+  border: 0;
+  background-color: hsl(221, 100%, 63%);
+  color: #fff;
+  font-weight: 500;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.error {
+  display: block;
+  color: hsl(10, 80%, 55%);
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 0.5em;
+}
+
+.backBtn {
+  display: block;
+  position: relative;
+  font-size: 13px;
+  color: hsl(221, 100%, 63%);
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.backBtn::after,
+.backBtn::before {
+  position: absolute;
+  content: "\2039";
+  left: 1rem;
+}
+
+.backBtn::before {
+  left: 0rem;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.backBtn:hover {
+  text-decoration: underline;
+}
+
+.backBtn:hover::before {
+  left: 0.8rem;
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
+}
+
+@media (min-width: 608px) {
+  .details {
+    flex: 1 1 45%;
+    margin-top: 0;
+  }
+}

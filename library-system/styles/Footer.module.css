@@ -1,0 +1,29 @@
+.footer {
+    background-color: #252E42;
+    color: #fff;
+    font-size: 13px;
+}
+
+.top, .bottom {
+    padding: 2rem 5%;
+}
+
+.logo {
+    font-size: 14px;
+}
+
+.logo span {
+    color: hsl(221, 100%, 63%);
+}
+
+.bottom {
+    background-color: hsl(221, 57%, 11%);
+    color: hsl(222, 7%, 65%);
+    text-align: center;
+    font-size: 12px;
+}
+
+.bottom p:first-child {
+    margin-bottom: 1rem;
+}
+

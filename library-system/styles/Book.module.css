@@ -1,0 +1,41 @@
+.book {
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px hsla(221, 28%, 20%, .2);
+    padding-bottom: 1rem;
+    overflow: hidden;
+}
+
+.book:hover{
+    box-shadow: 0px 1px 6px 1px hsla(221, 28%, 20%, .3);
+}
+
+.image {
+    /* padding-top: 1rem; */
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.content {
+    padding: 1rem;
+    text-align: center;
+}
+
+.content p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #252E42;
+}
+
+.content span {
+    font-size: 13px;
+    color: hsl(221, 100%, 63%);
+}
+
+@media (min-width: 768px) {
+    .content p {
+        font-size: 14px;
+    }
+
+}

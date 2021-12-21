@@ -1,0 +1,172 @@
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 5%;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.logo {
+  font-size: 1.2rem;
+  color: #252E42;
+}
+
+.header span {
+  color: hsl(221, 100%, 63%);
+}
+
+.menuBtn button {
+  padding: 0;
+}
+
+.closeMenuBtn {
+  position: absolute;
+  top: 1.7rem;
+  right: 1.7rem;  
+}
+
+.closeMenuBtn svg {
+  width: 2rem;
+}
+
+.closeMenuBtn path {
+  font-size: 2rem;
+  fill: #fff;
+}
+
+.sideMenu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: -100vw;
+  right: 0;
+  background-color: #252E42;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 40% 4rem;
+  opacity: 0;
+  transition-property: left, opacity;
+  transition-duration: 0.4s;
+  transition-timing-function: cubic-bezier(1, 1.62, 0.58, 0.81);
+}
+
+.sideMenu.open {
+  left: 0;
+  opacity: 1;
+  transition-property: left, opacity;
+  transition-duration: 0.4s;
+  transition-timing-function: cubic-bezier(0, -0.64, 0.53, 1.43);
+}
+
+.menuLink {
+  font-size: 1.5rem;
+  color: hsla(221, 100%, 100%, .5);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.menuLink:hover {
+  color: hsla(221, 100%, 100%, .8);
+}
+
+.active {
+  color: hsl(221, 100%, 100%);
+  font-weight: 500;
+}
+
+.active:hover {
+  color: hsl(221, 100%, 100%);
+}
+
+.login {
+  width: 100%;
+  margin-top: 7rem;
+}
+
+.login button {
+  display: block;
+  background-color: hsl(221, 100%, 63%);
+  width: 80%;
+  margin: 0 auto;
+  color: #252E42;
+  color: #fff;
+}
+
+.login button:hover {
+  background-color: hsla(221, 100%, 100%, 1);
+  color: #252E42;
+}
+
+
+@media (min-width: 768px) {
+  .header {
+    padding: 2.5rem 7%;
+  }
+
+  .sideMenu {
+    flex: 0 1 400px;
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    opacity: 1;
+  }
+
+  .closeMenuBtn, .menuBtn {
+    display: none;
+  }
+
+  .nav {
+    flex: 0 1 13rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menuLink {
+    font-size: 17px;
+    margin-bottom: 0;
+    color:  hsla(221, 28%, 20%, 0.5);
+  }
+
+  .menuLink:hover {
+    color:  hsla(221, 28%, 20%, 0.8);
+  }
+
+  .active, .active:hover {
+    color: #252E42;
+  }
+
+  .login {
+    margin-top: 0;
+  }
+
+  .login button {
+    width: auto;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .header {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}

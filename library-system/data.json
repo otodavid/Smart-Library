@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Blockchain: Blueprint for a New Economy",
+    "author": "Melanie Swan",
+    "image": "/book1.jpg"
+  },
+  {
+    "title": "Blockchain for Dummies",
+    "author": "Tiana Laurence",
+    "image": "/book2.jpg"
+  },
+  {
+    "title": "Self-Sovereign Identity: Decentralized digital identity and verifiable credentials",
+    "author": "Alex Preukschat",
+    "image": "/book3.jpg"
+  },
+  {
+    "title": "Architecture for Blockchain Applications",
+    "author": "Xiwei Xu",
+    "image": "/book4.jpg"
+  }
+]
