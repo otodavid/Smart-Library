@@ -1,4 +1,4 @@
-# Smart Library
+# Decentralized Library
 This is my project for the course Comp 7570: Blockchain Systems and Decentralized Applications
 
 ## Tools and Technologies Used
